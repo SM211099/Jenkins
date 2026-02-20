@@ -10,13 +10,13 @@ pipeline {
 
         stage("Test") {
             steps {
-                sh "mkdir Shubham"
+                echo "mkdir Shubham"
             }
         }
 
         stage("Deploy") {
             steps {
-                sh "touch Shubham.txt"
+                echo "touch Shubham.txt"
             }
         }
     }
